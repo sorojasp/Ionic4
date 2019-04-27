@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-notas',
   templateUrl: './notas.page.html',
-  styleUrls: ['./notas.page.scss'],
+  styleUrls: [],
 })
 export class NotasPage implements OnInit {
 
@@ -15,12 +15,10 @@ export class NotasPage implements OnInit {
 
   ngOnInit() {
   }
-
-  otherPage() {
-
-   // this.router.navigate(['../home'], { relativeTo: this.activatedRoute });
-   this.router.navigate(['../clientes/solicitud']);
+  prepareRoute( outlet: RouterOutlet ) {
+    return outlet && outlet.activatedRouteData;
   }
+
 
   }
 

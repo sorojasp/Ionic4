@@ -17,7 +17,7 @@ export class HomePage {
 
   anotherPage() {
 
-    this.router.navigate(['../notas'], { relativeTo: this.activatedRoute });
+    this.router.navigate(['../notas/estudiantes'], { relativeTo: this.activatedRoute });
 
   }
 

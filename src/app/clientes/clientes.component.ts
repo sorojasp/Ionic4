@@ -25,9 +25,4 @@ import { ActivatedRoute, Router } from '@angular/router';
     }
 
 
-    otraPage() {
-
-      this.router.navigate(['../clientes/registro'], { relativeTo: this.activatedRoute });
-
-    }
   }
